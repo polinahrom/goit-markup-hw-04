@@ -404,14 +404,33 @@ section.team {
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.hr {
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-top: 16px;
+    max-width: 100%;
+}
 .social-links 
 {
-    display: inline; 
-    width: 100%;
-    margin-right: 10px;
+    display: flex; 
     width: 44px;
     height: 44px;
     border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.icon:focus {
+    color: var(--acceny-color);
+}
+.social-links:last-child {
+    margin-right: 0;
+}
+.icon-logo {
+    display: block;
+        width: 20px;
+        height: 20px;
+        align-items: center;
+justify-content: center;
 }
 .regular-clients {
     background-color: var(--text-color);
