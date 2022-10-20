@@ -456,11 +456,9 @@ section.team {
         align-items: center;
         justify-content: center;
 }
-.icon:focus {
-    color: var(--acceny-color);
-}
+
 .icon {
-    fill: currentColor;
+    fill: #AFB1B8;
 }
 .social-links:last-child {
     margin-right: 0;
@@ -476,12 +474,7 @@ justify-content: center;
 .clients {
     color: var(--title-text-color);
     background-color: var(--second-text-color);
-    width: 1200px;
         align-items: center;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
         padding-top: 94px;
         padding-bottom: 94px;
 }
@@ -499,10 +492,56 @@ justify-content: center;
 }
 .clients-icon {
     margin-right: 30px;
+    fill: currentColor;
 }
- .client-logo:hover {
-    background-color: var(--header-bg-color);
-    fill: var(--acceny-color)
+.clients-icon-logo {
+    fill: #AFB1B8;
+}
+.client-logo {
+    fill: #AFB1B8;
+}
+
+
+.clients-icon-logo:hover .client-logo,
+.clients-icon-logo:focus .client-logo {
+    fill: var(--acceny-color);
+    border-color: var(--acceny-color);
+}
+.icon-logo {
+    fill: #AFB1B8;
+}
+.icon-logo-link:hover,
+.icon-logo-link:focus {
+    background-color: var(--acceny-color);
+}
+.icon-logo-link:hover .icon-logo,
+.icon-logo-link:focus .icon-logo {
+    fill: var(--second-text-color);
+}
+.social-links-footer:hover,
+.social-links-footer:focus {
+    background-color: var(--acceny-color);
+}
+.social-links-footer {
+    display: flex;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        align-items: center;
+        justify-content: center;
+        fill: #ffffff;
+        margin-right: 10px;
+}
+..social-links-footer:last-child {
+    margin-right: 0;
+}
+.icon-logo-footer {
+    display: block;
+        width: 20px;
+        height: 20px;
+        align-items: center;
+        justify-content: center;
+        fill: var(--header-bg-color);
 }
 .clients-icon:last-child{
     margin-right: 0;
@@ -511,10 +550,9 @@ justify-content: center;
     border: 1px solid #AFB1B8;
         border-radius: 4px;
 }
+
 /* С€СЂРёС„С‚ */
-.all-blocks-footer {
-    display: flex;
-}
+
 .container-footer {
     width: 1200px;
     padding-left: 15px;
@@ -528,6 +566,7 @@ justify-content: center;
 .join-us-link {
     display: flex;
     flex-wrap: nowrap;
+    margin-top: 20px;
 }
 .container-footer.logo {
 padding-top: 60px;
