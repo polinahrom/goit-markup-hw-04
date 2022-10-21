@@ -146,7 +146,10 @@ footer {
 .contact-link:focus {
     color: var(--acceny-color);
 }
-
+.contact-link.mail:hover.envelope,
+.contact-link.mail:focus.envelope {
+    fill: var(--acceny-color);
+}
 /* РґРѕРµР±РµС‚СЃСЏ */
 .contact-footer a {
     color: var(--footer-address-rgba);
@@ -532,7 +535,7 @@ justify-content: center;
         fill: #ffffff;
         margin-right: 10px;
 }
-..social-links-footer:last-child {
+.social-links-footer:last-child {
     margin-right: 0;
 }
 .icon-logo-footer {
@@ -552,21 +555,28 @@ justify-content: center;
 }
 
 /* С€СЂРёС„С‚ */
-
 .container-footer {
     width: 1200px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacts-footer {
     padding-left: 15px;
     padding-right: 15px;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
+
 
 }
-
+.join-us {
+    display: flex;
+    flex-wrap: wrap;
+}
 .join-us-link {
     display: flex;
-    flex-wrap: nowrap;
-    margin-top: 20px;
+    flex-wrap: wrap;
+
 }
 .container-footer.logo {
 padding-top: 60px;
@@ -733,6 +743,10 @@ a.map {
         font-size: 14px;
         line-height: 1.14px;
         letter-spacing: 0.03em;
+        text-transform: uppercase;
+        position: absolute;
+        margin-bottom: 20px;
+        display: inline-block;
 }
 /* СЃС‚СЂР°РЅРёС†Р° РїРѕСЂС‚С„РѕР»РёРѕ */
 
