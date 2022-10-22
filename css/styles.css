@@ -128,15 +128,20 @@ footer {
 .contact .item + .item {
     margin-left: 50px;
 } 
-.envelope {
+.icon-envelope {
+    width: 16px;
+    height: 12px;
     margin-right: 10px;
+
 }
-.envelope {
+
+.con-smartphone {
+    width: 10px;
+    height: 16px;
     margin-right: 10px;
+
 }
-.phone {
-    margin-right: 10px;
-}
+
 .nav-link:hover,
 .nav-link:focus {
     color: var(--acceny-color);
@@ -146,8 +151,13 @@ footer {
 .contact-link:focus {
     color: var(--acceny-color);
 }
-.contact-link.mail:hover.envelope,
-.contact-link.mail:focus.envelope {
+.contact-link.mail:hover,
+.contact-link.mail:focus {
+    fill: var(--acceny-color);
+}
+
+.contact-link.tel:hover,
+.contact-link.tel:focus {
     fill: var(--acceny-color);
 }
 /* РґРѕРµР±РµС‚СЃСЏ */
@@ -248,6 +258,7 @@ button:focus {
         padding-right: 15px;
         display: flex;
         align-items: center;
+        justify-content: center;
         margin-left: auto;
         margin-right: auto;
 }
@@ -263,44 +274,52 @@ button:focus {
     flex-basis: calc((100% - 3 * 30px) / 4);
 }
 .group-list::before {
-    display: block;
+    display: flex;
     content: "";
     height: 120px;
-    background-image: url(../images/Group.png);
+    content: url(../images/antenna\ 1-2.svg);
     background-color: rgba(245, 244, 250, 1);
     background-repeat: no-repeat;
     background-position: center;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
 }
 .clock-list::before {
-    display: block;
+    display: flex;
     content: "";
     height: 120px;
-    background-image: url(../images/clock\ 1.png);
+    content: url(../images/clock\ 1-2.svg);
     background-color: rgba(245, 244, 250, 1);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .diagram-list::before {
-    display: block;
+    display: flex;
     content: "";
     height: 120px;
-    background-image: url(../images/diagram\ 1.png);
+    content: url(../images/diagram\ 1-2.svg);
     background-color: rgba(245, 244, 250, 1);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .astronaut-list::before {
-    display: block;
+    display: flex;
     content: "";
     height: 120px;
-    background-image: url(../images/astronaut\ 1.png);
+    content: url(../images/astronaut\ 1-2.svg);
     background-color: rgba(245, 244, 250, 1);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
 }
 .specifics-title {
     color: var(--title-text-color);
@@ -470,6 +489,7 @@ section.team {
         height: 20px;
         align-items: center;
 justify-content: center;
+fill: #AFB1B8;
 }
 
 .clients {
@@ -516,11 +536,14 @@ justify-content: center;
 }
 .icon-logo-link:hover .icon-logo,
 .icon-logo-link:focus .icon-logo {
-    fill: var(--second-text-color);
+    fill: rgba(255, 255, 255, 1);
 }
 .social-links-footer:hover,
 .social-links-footer:focus {
     background-color: var(--acceny-color);
+}
+.social-links-footer {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .social-links-footer {
     display: flex;
@@ -541,7 +564,7 @@ justify-content: center;
         height: 20px;
         align-items: center;
         justify-content: center;
-        fill: var(--header-bg-color);
+        fill: rgba(255, 255, 255, 1);
 }
 .clients-icon:last-child{
     margin-right: 0;
@@ -555,12 +578,17 @@ justify-content: center;
 .container-footer {
     width: 1200px;
     display: flex;
+    align-items: baseline;
     margin-left: auto;
     margin-right: auto;
 }
 
 .contacts-footer {
     align-items: center;
+}
+
+.join-us {
+    margin-left: 70px;
 }
 
 .join-us-link {
@@ -735,7 +763,7 @@ a.map {
     color: rgba(255, 255, 255, 1);
         font-weight: 700;
         font-size: 14px;
-        line-height: 1.14px;
+        line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         margin-bottom: 20px;
