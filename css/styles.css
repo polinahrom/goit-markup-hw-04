@@ -277,14 +277,15 @@ button:focus {
     display: flex;
     content: "";
     height: 120px;
-    content: url(../images/antenna\ 1-2.svg);
     background-color: rgba(245, 244, 250, 1);
+    background-image: url(../images/symbol-defs-svg.svg#icon-antenna);
     background-repeat: no-repeat;
     background-position: center;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
 }
+
 .clock-list::before {
     display: flex;
     content: "";
@@ -301,7 +302,7 @@ button:focus {
     display: flex;
     content: "";
     height: 120px;
-    content: url(../images/diagram\ 1-2.svg);
+    content: url(../images/symbol-defs-svg.svg#icon-diagram);
     background-color: rgba(245, 244, 250, 1);
     background-repeat: no-repeat;
     background-position: center;
@@ -313,7 +314,7 @@ button:focus {
     display: flex;
     content: "";
     height: 120px;
-    content: url(../images/astronaut\ 1-2.svg);
+    content: url(../images/symbol-defs-svg.svg#icon-astronaut);
     background-color: rgba(245, 244, 250, 1);
     background-repeat: no-repeat;
     background-position: center;
